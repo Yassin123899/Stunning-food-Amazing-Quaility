@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    color:white;
+    background-color: wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navBar{
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    height: 120px;
+    top:0;
+    left:0;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navBar .list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left:80px;
+}
+.navBar .list a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    margin:0px 20px;
+}
+.navBar .list a:hover, .navBar .socialicons a:hover{
+    color:blue;
+}
+.navBar .socialicons a{
+    color:white;
+    font-size: 25px;
+    margin:0px 20px;
+}
+.home{
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+.home .home-img{
+    border: 5px solid white;
+    margin-top: 100px;
+}
+.home .home-img img{
+    height: 200px;
+    width: 200px;
+}
+.home .home-msg{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    margin:170px 0px;
+    padding: 20px;
+    text-align: center;
+}
+.home .home-msg p{
+    padding:20px 0px;
+}
+.home .home-msg a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home .home-msg a:hover{
+    color:blue;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(100,98,98,0.2);
+    width:80%;
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 100px;
+    padding: 30px;
+    opacity:0.8;
+}
+.menu-img{
+    width:50%;
+    text-align: center;
+    border-radius: 10px;
+}
+.menu-img img{
+    width:75%;
+    border-radius: 50px;
+    margin:10px;
+}
+.home-menu{
+    width: 50%;
+}
+.home-menu .menu-content{
+    padding: 15px 0px;
+    text-align: center;
+}
+.home-menu .menu-content h2{
+    padding-bottom: 15px;
+}
+.home-menu ul{
+   background-color: white;
+   border-radius: 10px;
+   list-style: none;
+   padding: 30px;
+}
+.home-menu li{
+    width: 50%;
+    margin: 20px 0px 20px 50px;
+    border-bottom: 1px solid slategray;
+    padding-top: 20px;
+}
+.dish{
+    color:rgb(85, 85, 85);
+    font-weight: bold;
+}
+.price{
+    color:rgb(85, 85, 85);
+    font-weight: bold;
+    float:right;
+}
+.Description{
+    color:rgb(153, 153, 153);
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+}
+.coppy{
+    text-align: center;
+    color: rgb(156, 142, 116);
+    margin-bottom: 50px;
+}
+@media(max-width:600px){
+.menu-img,.home-menu{
+    width: 100%;
+}
+.menu-img img{
+    width: 90%;
+}
+}
